@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fdfdfd"
+    tools:context="com.example.balinux.intagramui.MainActivity">
+
+
+    <ImageView
+        android:src="@drawable/ic_person"
+        android:id="@+id/photoprofile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/photoprofile"
+        android:id="@+id/nameprofile"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="balinux" />
+
+    <TextView
+
+        android:layout_toRightOf="@+id/photoprofile"
+        android:layout_below="@+id/nameprofile"
+        android:id="@+id/statusprofile"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Code and design" />
+
+    <!--thumnail-->
+    
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:src="@drawable/ic_love"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/statusprofile"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="#cdcdcd"
+        android:layout_height="330dp" />
+
+    <TextView
+        android:id="@+id/usercap"
+        android:layout_below="@+id/thumbnail"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="balinux" />
+
+    <TextView
+
+        android:layout_below="@+id/usercap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Black Love #Fsociety" />
+    <!--footer-->
+    <ImageView
+        android:src="@drawable/ic_view"
+        android:id="@+id/viewer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_toRightOf="@+id/viewer"
+        android:layout_alignParentBottom="true"
+        android:text="1000"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:src="@drawable/ic_share"
+        android:id="@+id/share"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_toRightOf="@+id/share"
+        android:layout_alignParentBottom="true"
+        android:text="134"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:src="@drawable/ic_love"
+        android:id="@+id/lover"
+        android:layout_toLeftOf="@+id/loved"
+        android:layout_alignParentBottom="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/loved"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="235"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>
